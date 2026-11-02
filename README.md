@@ -1,45 +1,57 @@
-# LifeLane Governance Hub - TCS iON AI Hackathon 🚦
+# LifeLane Governance Hub — TCS iON AI Hackathon 🚦
 
-**Author:** Shreyas Padmashali | Aspiring Data Analyst
+**Author:** Shreyas Padmashali | Aspiring Data Analyst  
+**Project Scope:** Live Web Dashboard, Executive Presentation Deck, Root Cause Analysis & Data Architecture
 
-**Project Type:** UI/UX Architecture, Root Cause Analysis, and Dashboard Prototyping
+---
+
+### 🌐 Quick Access & Deliverables
+* 🚀 **[Launch Live Interactive Web App](https://lifelane-signal-compass.lovable.app/)**
+* 📊 **[View Executive Presentation Deck (PDF)](LifeLane_Governance_Hub_Executive_Presentation.pdf)**
+* 📄 **[View 5-Whys Root Cause Analysis & Build Plan (PDF)](TCSiON_Hackathon_Task.pdf)**
+
+---
 
 ## 📌 Project Overview
-This repository contains the data architecture, visual strategy, and business logic for the **LifeLane Governance Hub**, a project designed for the TCS iON AI Hackathon. 
+The **LifeLane Governance Hub** is an urban traffic management and data governance platform designed for the TCS iON AI Hackathon. It bridges the critical operational data gap between Emergency Medical Services (EMS) dispatchers and city traffic control authorities to eliminate emergency vehicle delays at congested intersections.
 
-The core objective was to design a data-driven solution for urban traffic congestion, specifically addressing the critical disconnect between city traffic control and emergency medical services (EMS). 
+## 🔍 Problem Statement & 5-Whys Root Cause Analysis
+* **The Challenge:** Emergency vehicles and ambulances lose life-saving minutes stuck at static, fixed-timer traffic intersections during trauma and cardiac calls.
+* **Root Cause (5 Whys):** Traffic signal systems are governed, specified, and evaluated separately from emergency medical services. Transport and urban planning authorities operate on throughput KPIs, while health agencies own survival metrics, leaving zero integrated data infrastructure or automated priority protocols.
 
-📄 **[View the complete Root Cause Analysis and Build Plan (PDF)](TCSiON_Hackathon_Task.pdf)**
+---
 
-## 🔍 The Problem & Root Cause
-**The Problem:** Critical patients and accident victims deteriorate because their ambulances get trapped in fixed-timer signal queues. Traffic signals follow pre-set timing cycles that do not automatically adjust for approaching emergencies.
+## 🛠️ Executive Dashboard Showcase & Key Insights
 
-**The Root Cause (5 Whys Analysis):** Traffic signal systems are governed, specified, and evaluated separately from emergency medical services. There is no integrated data infrastructure, shared priority protocol, or accountable owner making time-critical medical response a core design requirement of traffic signal control.
+### 1. Dashboard Overview & Accountability Tracker
+* **Visual Focus:** High-level metrics tracking average signal delay (33.0s), active emergency corridors, and an intersection-level ownership matrix.
+* **Executive Insights:** Assigns clear agency ownership (e.g., State Highways vs. City Traffic Dept) and identifies outdated signal controllers (e.g., Hosur Rd & Silk Board carrying 52.7s average delay) to drive operational accountability.
 
-## 🛠️ The Solution: LifeLane Governance Hub
-A web-based governance and analytics tool that unifies emergency trip logs, signal performance data, and delay hotspots into a single shared workspace for EMS and traffic departments. 
-
-### Core Features & Dashboard Architecture
-
-#### 1. Dashboard Overview & Accountability Tracker
-Assigns intersection ownership (e.g., State Highways vs. City Traffic Dept) to drive actionable resolutions for outdated controllers. Tracks average signal delay against active emergency corridors.
 ![Dashboard Overview](Dashboard%20Overview.png)
 
-#### 2. Incident Timeline
-Links live emergency trips to specific signal states (Green, Yellow, Red) and tracks cumulative lost time per intersection.
+### 2. Incident Timeline
+* **Visual Focus:** Incident-level event timeline tracking EMS trip logs (`EMS-2026-10-4471`) against signal states (Green/Yellow/Red) and cumulative lost time.
+* **Executive Insights:** Isolates exact points of friction along an emergency route. Identifies non-preempted signals (e.g., INT-1003 contributing 61s delay) to justify signal controller upgrades.
+
 ![Incident Timeline](Incident%20Timeline.png)
 
-#### 3. Predictive Forecaster
-Generates delay heatmaps across the metro grid based on 30-day EMS coordination data, allowing officials to proactively identify high-risk intersections during peak hours.
+### 3. Predictive Forecaster
+* **Visual Focus:** Hourly predicted delay heat map across the metro grid (09:00 Peak) paired with a delay vs. preemption scatter plot.
+* **Executive Insights:** Enables traffic authorities to proactively deploy signal override protocols before peak congestion cycles (e.g., Monday 09:00 peak on INT-1003 reaching risk score 61).
+
 ![Predictive Forecaster](Predictive%20Forecaster.png)
 
-#### 4. Priority Simulator
-Models the impact of "Mild priority" vs. "Full preemption" rules, allowing administrators to recompute historical intersection delays and test new protocols before physical implementation.
+### 4. Priority Simulator
+* **Visual Focus:** Interactive simulation module testing rule parameters ("Mild priority" vs. "Full preemption") across historical trip data.
+* **Executive Insights:** Demonstrates a **7.7% delay reduction** (lowering average delay from 30.8s to 28.5s across targeted intersections) prior to physical infrastructure deployment.
+
 ![Priority Simulator](Priority%20Simulator.png)
 
-#### 5. Signal Analytics
-Provides a breakdown of average EMS delays by specific intersections and tracks preemption trigger rates, isolating exact coordination gaps.
+### 5. Signal Analytics
+* **Visual Focus:** Bar chart ranking intersections by average EMS delay alongside hourly preemption trigger rate trends.
+* **Executive Insights:** Highlights peak preemption trigger dips (e.g., 08:00 and 18:00 commute rush), targeting capital expenditure toward high-friction corridors like INT-1003 and INT-1005.
+
 ![Signal Analytics](Signal%20Analytics.png)
 
 ---
-*Note: The final web deployment of this prototype was restricted due to a hackathon submission portal error. This repository serves as the official documentation of the data logic, root cause analysis, and UI/UX dashboards engineered during the event.*
+*Developed by Shreyas Padmashali for the TCS iON AI Hackathon.*
